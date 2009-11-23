@@ -4,7 +4,7 @@ Plugin Name: Picasa for Wordpress
 Plugin URI: http://wordpress.org/extend/plugins/picasa-for-wordpress/
 Description: Embed a Flash player widget based on a selected Picasa album.
 Author: Pierre Sudarovich
-Version: 1.5
+Version: 1.5.1
 Author URI: http://pierre.dommiers.com/
 */
 
@@ -100,8 +100,8 @@ if (version_compare($wp_version, '2.8', '>=')) {
 		}
 		$feed =$instance['feed'];
 		$RGB = $instance['RGB'];
-		$width = empty($instance['width']) ? "210" : $instance['width'];
-		$unit= $instance['unit'];
+		$width = empty($instance['width']) ? "100" : $instance['width'];
+		$unit= empty($instance['unit']) ? "%" : $instance['unit'];
 		$autoplay = $instance['autoplay'];
 		$caption = $instance['caption'];
 		$registered_only = $instance['registered_only'];?>
@@ -127,7 +127,7 @@ if (version_compare($wp_version, '2.8', '>=')) {
 		<?php
 		}
 	}
-	
+
 	function register_My_Picasa_Widget(){
 		register_widget('Picasa_Widget');
 	}
@@ -150,7 +150,6 @@ else {
 		$feed=str_replace('=',"%3D",$feed);
 		$feed=str_replace('&amp;',"&",$feed);
 		$feed=str_replace('&',"%26",$feed);
-		
 		$width =  empty( $options[$number]['width'] ) ? "210" : $options[$number]['width'];
 		$unit = $options[$number]['unit'];
 		$autoplay = (empty( $options[$number]['autoplay'] ) || $options[$number]['autoplay']=='0') ? '&amp;noautoplay=1' : '';
@@ -215,12 +214,12 @@ else {
 		$title = attribute_escape($options[$number]['title']);
 		$feed = attribute_escape( $options[$number]['feed'] );
 		$RGB = attribute_escape( $options[$number]['RGB'] );
-		$width = empty( $options[$number]['width'] ) ? "210" : attribute_escape( $options[$number]['width']);
-		$unit= attribute_escape( $options[$number]['unit']);
+		$width = empty( $options[$number]['width'] ) ? "100" : attribute_escape( $options[$number]['width']);
+		$unit = empty( $options[$number]['unit'] ) ? "%" : attribute_escape( $options[$number]['unit']);
 		$autoplay = attribute_escape( $options[$number]['autoplay'] );
 		$caption = attribute_escape( $options[$number]['caption'] );
 		$registered_only = attribute_escape( $options[$number]['registered_only'] );	?>
-		
+
 		<p><label for="picasa-title"><?php _e('Title:',picasa); ?>
 		<input style="width: 250px;" id="picasa-title-<?php echo $number; ?>" name="picasa-title-<?php echo $number; ?>" 
 		type="text" value="<?php echo $title; ?>" /></label></p>
@@ -234,8 +233,8 @@ else {
 		<input type="text" name="picasa-width-<?php echo $number; ?>" id="picasa-width-<?php echo $number; ?>" style="width: 35px;" 
 		value="<?php echo $width; ?>" /></label> <select name="picasa-unit-<?php echo $number; ?>" 
 		id="picasa-unit-<?php echo $number; ?>">
-			<option value="px"<?php selected( $options[$number]['unit'], 'px' ); ?>>px</option>
-			<option value="%"<?php selected( $options[$number]['unit'], '%' ); ?>>%</option>
+			<option value="px"<?php selected( $unit, 'px' ); ?>>px</option>
+			<option value="%"<?php selected( $unit, '%' ); ?>>%</option>
 		</select></p>
 		<p><label for="picasa-autoplay-<?php echo $number; ?>"><?php _e('Autoplay',picasa); ?> <input type="checkbox" value="1" 
 		name="picasa-autoplay-<?php echo $number; ?>" 
@@ -281,7 +280,7 @@ else {
 		</div>
 	<?php
 	}
-		
+
 	function widget_picasa_register() {
 		global $wp_version;
 		$options = get_option('widget_picasa');

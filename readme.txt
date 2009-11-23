@@ -56,5 +56,8 @@ Yes
 
 == Changelog ==
 
+= 1.5.1 =
+* Just a very little modification to set the default values to 100% during the creation of a slideshow ;).
+
 = 1.5 =
 * (23 Nov 2009) - First Release.
