@@ -30,12 +30,10 @@ Features:
 
 == Frequently Asked Questions ==
 
+In some explanations, i ask to edit a php file. Be careful to edit them with a good editor like [Notepad++](http://notepad-plus.sourceforge.net/ "") and open each file with the format "UTF-8 without BOM".
+
 = I've entered the url from `Link to this album`, but nothing appears. What's wrong ? =
 Be careful, the url than you have to fill is from the **RSS link**.
-
-= Does `Picasa for Wordpress` works with WP-MU? =
-Yes
-
 
 = I'd like to get the `Picasa for Wordpress` interface in my native language. How can i do that? =
 Edit the file `picasa-en_US.po` by using a PO file editor such as :
@@ -46,6 +44,9 @@ Put the `picasa-xx_XX.mo` file in the `lang` folder (under `picasa-for-wordpress
 
 = Ok, i've done what you explain above, but the `Picasa for Wordpress` interface is still in english How to make it works? =
 Open your `wp-config.php` file (at the root of your blog) and search for : `define ('WPLANG', 'xx_XX');` where xx_XX is your language. If this line doesn't exist add it in your file. Save your modifications and re-upload the wp-config on your server.
+
+= Does `Picasa for Wordpress` works with WP-MU? =
+Yes
 
 
 == Screenshots ==
