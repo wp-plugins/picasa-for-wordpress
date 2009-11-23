@@ -1,0 +1,75 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Picasa for Wordpress\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-11-22 11:15+0100\n"
+"PO-Revision-Date: 2009-11-23 14:03+0100\n"
+"Last-Translator: Pierre\n"
+"Language-Team: Pierre\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: French\n"
+"X-Poedit-Country: FRANCE\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../picasa.php:19
+msgid "Embed a Flash player widget based on a selected Picasa album."
+msgstr "Insérez un widget lecteur Flash basé sur un album Picasa sélectionné."
+
+#: ../picasa.php:20
+#: ../picasa.php:25
+msgid "SlideShow"
+msgstr "Diaporama"
+
+#: ../picasa.php:68
+#: ../picasa.php:189
+msgid "Manage SlideShow"
+msgstr "Gérer diaporama"
+
+#: ../picasa.php:109
+#: ../picasa.php:224
+msgid "Title:"
+msgstr "Titre:"
+
+#: ../picasa.php:111
+#: ../picasa.php:227
+msgid "RSS feed:"
+msgstr "Flux RSS:"
+
+#: ../picasa.php:113
+#: ../picasa.php:230
+msgid "RGB:"
+msgstr ""
+
+#: ../picasa.php:115
+#: ../picasa.php:233
+msgid "Width:"
+msgstr "Largeur:"
+
+#: ../picasa.php:121
+#: ../picasa.php:240
+msgid "Autoplay"
+msgstr "Lecture automatique"
+
+#: ../picasa.php:123
+#: ../picasa.php:243
+msgid "Registered users only"
+msgstr "Utilisateurs enregistrés seulement"
+
+#: ../picasa.php:125
+#: ../picasa.php:246
+msgid "Show Captions"
+msgstr "Afficher légendes"
+
+#: ../picasa.php:273
+msgid "How many Picasa SlideShow widgets would you like ?"
+msgstr "Combien de widgets diaporamas Picasa souhaitez-vous ?"
+
+#: ../picasa.php:279
+msgid "Save"
+msgstr "Enregistrer"
+
