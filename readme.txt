@@ -3,7 +3,7 @@ Contributors: Pierre Sudarovich
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9931621
 Tags: Picasa, Images, Gallery, Slideshow
 Requires at least: 2.0
-Tested up to: 2.8.6
+Tested up to: 3.0
 Stable tag: trunk
 
 A plugin that will let you add slideshow widget(s) of Picasa albums from the given RSS URL.
@@ -55,6 +55,9 @@ Yes
 
 
 == Changelog ==
+
+= 1.6 =
+favor to the use of `define('WP_DEBUG', true);` some menage have been done in the code :)
 
 = 1.5.1 =
 * Just a very little modification to set the default values to 100% during the creation of a slideshow ;).

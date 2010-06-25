@@ -4,7 +4,7 @@ Plugin Name: Picasa for Wordpress
 Plugin URI: http://wordpress.org/extend/plugins/picasa-for-wordpress/
 Description: Embed a Flash player widget based on a selected Picasa album.
 Author: Pierre Sudarovich
-Version: 1.5.1
+Version: 1.6
 Author URI: http://pierre.dommiers.com/
 */
 
@@ -98,13 +98,13 @@ if (version_compare($wp_version, '2.8', '>=')) {
 			$options = $newoptions;
 			update_option('widget_picasa', $options);
 		}
-		$feed =$instance['feed'];
-		$RGB = $instance['RGB'];
+		$feed = empty($instance['feed']) ? "" : $instance['feed'];
+		$RGB = empty($instance['RGB']) ? "" : $instance['RGB'];
 		$width = empty($instance['width']) ? "100" : $instance['width'];
 		$unit= empty($instance['unit']) ? "%" : $instance['unit'];
-		$autoplay = $instance['autoplay'];
-		$caption = $instance['caption'];
-		$registered_only = $instance['registered_only'];?>
+		$autoplay = empty($instance['autoplay']) ? "" : $instance['autoplay'];
+		$caption = empty($instance['caption']) ? "" : $instance['caption'];
+		$registered_only = empty($instance['registered_only']) ? "" : $instance['registered_only'];?>
 
 		<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title:',picasa); ?> <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" 
 		name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr($title); ?>"/></label></p>
