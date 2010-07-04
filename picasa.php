@@ -4,7 +4,7 @@ Plugin Name: Picasa for Wordpress
 Plugin URI: http://wordpress.org/extend/plugins/picasa-for-wordpress/
 Description: Embed a Flash player widget based on a selected Picasa album.
 Author: Pierre Sudarovich
-Version: 1.6
+Version: 1.6.1
 Author URI: http://www.monblogamoua.fr/
 */
 

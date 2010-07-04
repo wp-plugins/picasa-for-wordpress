@@ -56,8 +56,11 @@ Yes
 
 == Changelog ==
 
+= 1.6.1 =
+* nothing really important, just the update of my blog url ;)
+
 = 1.6 =
-favor to the use of `define('WP_DEBUG', true);` some menage have been done in the code :)
+* favor to the use of `define('WP_DEBUG', true);` some menage have been done in the code :)
 
 = 1.5.1 =
 * Just a very little modification to set the default values to 100% during the creation of a slideshow ;).
