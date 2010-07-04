@@ -5,7 +5,7 @@ Plugin URI: http://wordpress.org/extend/plugins/picasa-for-wordpress/
 Description: Embed a Flash player widget based on a selected Picasa album.
 Author: Pierre Sudarovich
 Version: 1.6
-Author URI: http://pierre.dommiers.com/
+Author URI: http://www.monblogamoua.fr/
 */
 
 define('picasa', 'picasa-for-wordpress/lang/picasa');
